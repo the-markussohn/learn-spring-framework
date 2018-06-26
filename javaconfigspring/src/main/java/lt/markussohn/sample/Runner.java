@@ -15,5 +15,10 @@ public class Runner {
 
         Game game = ctx.getBean("game", Game.class);
         game.play();
+
+        for (String name :
+                ctx.getBeanDefinitionNames()) {
+            System.out.println("Bean " + name);
+        }
     }
 }
