@@ -1,5 +1,7 @@
 package lt.markussohn.sample.domain;
 
+import javax.sql.DataSource;
+
 /**
  * @author the-markussohn
  *         2018-06-26.
@@ -8,6 +10,7 @@ public class BasketballGame implements Game {
 
     private Team homeTeam;
     private Team awayTeam;
+    private DataSource dataSource;
 
     public BasketballGame() {
     }
@@ -39,5 +42,9 @@ public class BasketballGame implements Game {
 
     public void setAwayTeam(Team awayTeam) {
         this.awayTeam = awayTeam;
+    }
+
+    public void setDataSource(DataSource dataSource) {
+        this.dataSource = dataSource;
     }
 }
