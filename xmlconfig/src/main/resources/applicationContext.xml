@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:component-scan base-package="lt.markussohn.xml"/>
+
+    <bean id="leftSock" class="lt.markussohn.xml.domain.LeftSock"/>
+    <bean id="rightSock" class="lt.markussohn.xml.domain.RightSock"/>
+    <bean id="evaluator" class="lt.markussohn.xml.domain.StyleEvaluator">
+        <property name="rightSock" ref="rightSock"/>
+        <property name="leftSock" ref="leftSock"/>
+    </bean>
+
+</beans>

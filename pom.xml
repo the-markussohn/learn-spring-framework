@@ -10,6 +10,7 @@
     <version>1.0.1-SNAPSHOT</version>
     <modules>
         <module>javaconfigspring</module>
+        <module>xmlconfig</module>
     </modules>
 
     <dependencies>
