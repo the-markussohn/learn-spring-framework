@@ -12,6 +12,7 @@
         <module>javaconfigspring</module>
         <module>xmlconfig</module>
         <module>coupling-example</module>
+        <module>message-project</module>
     </modules>
 
     <properties>
